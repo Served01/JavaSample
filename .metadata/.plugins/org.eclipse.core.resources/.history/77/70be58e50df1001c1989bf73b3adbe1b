@@ -1,0 +1,21 @@
+
+public class HelloWorld3 { // 번지: 1000 이라고 가정, 서울시
+//field area: 공용 영역
+	
+	private void helloPrint() { // 번지: 2000 이라고 가정, 신림동
+		System.out.println("안녕하세요?????");
+		System.out.println("Helloworld~~~");
+		
+	}
+		
+	public static void main(String[] args) {  //번지: 3000 이라고 가정, 구로구
+
+		HelloWorld3 helloworld3 = new HelloWorld3();
+		
+		helloworld3.helloPrint(); //신림동 호출, 객체명,메소드명 공식에 의하여 
+	
+	} //main method 영역
+	
+}
+// memory: RAM => 16GB
+// 

@@ -1,0 +1,31 @@
+
+public class HelloWorld4 { // 번지: 1000 이라고 가정, 서울시
+//field area: 공용 영역, 클래스(전역)메소드, 클래스(전역)변수
+	
+	private void helloPrint() { // 번지: 2000 이라고 가정, 신림동
+		System.out.println("안녕하세요?????");
+		System.out.println("Helloworld~~~");
+		
+	}
+		
+	public static void main(String[] args) {  //번지: 3000 이라고 가정, 구로구
+
+		HelloWorld4 helloworld3 = new HelloWorld4();
+		
+		helloworld3.helloPrint(); //신림동 호출, 객체명,메소드명 공식에 의하여 
+	
+	} //main method 영역
+	
+}
+// memory: RAM => 16GB
+
+// 접근제한자
+/* 개발자가 프로그래밍 할 때 접근제한자를 결정해야한다.
+ * 생략: 
+ * private: 같은 패키지의 같은 클래스내에 존재하는 경우에 된다. (범위가 제일 좁음), 정보은닉 (캡슐화)
+ * protected: 상속관계에 있는 같은 패키지와 클래스의 경우에 사용가능함.
+ * public: 
+ * 
+ */
+// main method는 깨끗하게 하는 것이 가장 좋은 프로그래밍 방식이다.
+// 공용 영역에다가 개인 메소드를 만들어 놓는 것이 활용성이 높아진다.

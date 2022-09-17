@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+//import java.util.Scanner;
+
+
+public class Information3 {
+
+	private void infoPrint1() {
+		// 문제1> 국어점수 98점이고, 수학점수 100점인 경우의 합계를 구하세요.
+				// 1. 정수형 데이터
+				// 2. 합계를 구하라
+		Scanner sc = new Scanner(System.in);
+		//Fix project setup은 java의 버전이 다르게 할 필요가 있을 때 사용함. 실질적으로 java는 거의 안 사용하고 스프링 같이 나중에 자주 씀.
+		
+		
+				int kor= sc.nextInt();
+				int mat= sc.nextInt();
+				int sum = kor + mat;
+				System.out.println("정수형 합계: " + sum);
+				
+	}
+	
+	private void infoPrint2() {
+		// 문제2> 영어점수 98.5점이고, 수학점수 100.0점인 경우의 합계를 구하세요.
+		// 1. 실수형 데이터
+		// 2. 합계를 구하라
+		double eng=98.5;
+		double math=100.0;
+		double sum2 = eng + math;
+		System.out.println("실수형 합계: " + sum2);
+				
+	}
+	
+	private void infoPrint3() {
+		// 문제3> 영어점수 98.5점이고, 수학점수 100.0점인 경우의 합계는 정수형으로 구하시오.
+		// 1. 실수형 데이터
+		// 2. 합계를 구하라
+		// 3. cast: 형 변환 (묵시적, 강제적 형변환)
+		double eng2 = 98.5;
+		double math3 = 100.0;
+		int sum3 = (int)(eng2 + math3);
+		// 이것의 경우는 강제적 형변환이다.
+		System.out.println("정수형 합계: " + sum3);
+				
+	}
+	
+	private void infoPrint4() {
+		// 문제 4> 영어점수 98.5점이고, 수학점수 100점인 경우의 합계는 실수형으로 구하시오.
+		// 1.실수형 데이터, 정수형 데이터
+		// 2.합계 구하라
+		// 3.묵시적 형변화
+		double eng4 =98.5;
+		int mat4=100;
+		
+		double sum4 = eng4 + mat4;
+		// 실수가 정수보다 넓은 개념이라 위의 코딩이 성립됨, 이런걸 보고 묵시적 형변화라고 한다
+		System.out.println("실수형 합계: " + sum4);
+				
+	}
+	
+	public static void main(String[] args) {
+		Information3 im1 = new Information3();
+		im1.infoPrint1();
+		
+		Information3 im2 = new Information3();
+		im2.infoPrint2();
+
+		Information3 im3 = new Information3();
+		im3.infoPrint3();
+
+		Information3 im4 = new Information3();
+		im4.infoPrint4();
+		
+	}
+
+}
+
+/*
+ * 이게 더 효율적임 그러나 상황에 따라서 이게 더 안 좋을수도 있음
+ * public static void main(String[] args) {
+		Information2 im1 = new Information2();
+		im1.infoPrint1();
+		im1.infoPrint2();
+		im1.infoPrint3();
+		im1.infoPrint4();
+*/

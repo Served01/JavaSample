@@ -1,0 +1,17 @@
+
+public class HelloWorld3 {
+//field area: 
+	
+	private void helloPrint() {
+		// TODO Auto-generated method stub
+		
+	}
+		
+	public static void main(String[] args) {  //번지: 3000
+		HelloWorld3 helloworld3 = new HelloWorld3();
+		
+		helloworld3.helloPrint();
+	
+	} //main method 영역
+	
+}

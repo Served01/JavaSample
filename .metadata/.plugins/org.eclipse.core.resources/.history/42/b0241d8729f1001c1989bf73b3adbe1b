@@ -1,0 +1,54 @@
+class AAA { //main 메소드가 있는 class만 public이 사용 가능
+
+	//objectName.class variable
+	static int kor;
+	
+	
+	
+}
+
+public class HelloWorld4 extends AAA { // 번지: 1000 이라고 가정, 서울시
+//field area: 공용 영역, 클래스(전역)메소드, 클래스(전역)변수
+	
+	static int kor = 100 ; //class variable (전역 변수)
+	//위의 static 덕분에 kor 값을 다른 곳에서도 공유 가능
+	//int kor = 100;
+	
+	private void helloPrint() { // 번지: 2000 이라고 가정, 신림동
+		System.out.println("안녕하세요?????");
+		System.out.println("Helloworld~~~");
+		
+	}
+		
+	public static void main(String[] args) {  //번지: 3000 이라고 가정, 구로구
+
+		int kor = 89; //위의 static 없어서 이 값이 결과값으로 나옴, local variable (지역 변수) (전역변수랑 지역변수가 있을때는 지역변수가 먼저지만 없을 경우 그냥 전역변수가 적용됨)
+		
+		HelloWorld4 helloworld3 = new HelloWorld4();
+		
+		helloworld3.helloPrint(); //신림동 호출, 객체명,메소드명 공식에 의하여 
+		
+		System.out.println(kor);
+		System.out.println(HelloWorld4.kor);
+		
+	
+	} //main method 영역
+	
+}
+// memory: RAM => 16GB
+
+// 접근제한자
+/* 개발자가 프로그래밍 할 때 접근제한자를 결정해야한다.
+ * 생략: 
+ * private: 같은 패키지의 같은 클래스내에 존재하는 경우에 된다. (범위가 제일 좁음), 정보은닉 (캡슐화)
+ * protected: 상속관계에 있는 같은 패키지와 클래스의 경우에 사용가능함.
+ * public: (대부분은 이거여야함)
+ * 
+ * Method 형식
+ * 
+ * public static void Hello() {
+ * (public static void main의 static은 뺄 수 없지만 여기서는 static을 뺄 수 있음)
+ * }
+ */
+// main method는 깨끗하게 하는 것이 가장 좋은 프로그래밍 방식이다.
+// 공용 영역에다가 개인 메소드를 만들어 놓는 것이 활용성이 높아진다.

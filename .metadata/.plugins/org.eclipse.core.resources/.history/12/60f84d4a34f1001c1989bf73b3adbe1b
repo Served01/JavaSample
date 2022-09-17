@@ -1,0 +1,35 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class HelloWorld5 { 
+	
+		
+	public static void main(String[] args) {  //번지: 3000 이라고 가정, 구로구
+		
+		HelloWorld5 helloworld3 = new HelloWorld5();
+		//public final class Scanner
+		//extends Object
+		//implements Iterator<String>, Closeable
+		Scanner sc = new Scanner(System.in);
+		System.out.print("인사말을 입력해 주세요: ");
+		String Hello = sc.nextLine();
+		
+		//정수형태는 nextInt로 하면됨. 즉 여러가지 형식이 가능
+		//next는 스페이스 이후는 안 나오고 nextLine은 스페이스와 상관없이 다 나옴
+		System.out.println("인사말은: " + Hello);
+		System.out.println("========= 위에는 Scanner class example =========");
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		//이 개념을 좀 알아보긴 해야함
+		//컴퓨터의 buffer 개념
+		//memory의 일부 = buffer = 8192Kbyte = pointer(C) = Address(번지)
+		//new는 object를 만들어주는 역할을 한다
+	
+	} //main method 영역
+	
+}
+/* buffer: 임시 기억 장치
+ * 
+ * 
+*/
