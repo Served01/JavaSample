@@ -15,11 +15,13 @@ public class Problem2 {
 	static int plus;
 	static double minus;
 	
+	@SuppressWarnings("static-access")
 	public Problem2(int ppl1,int ppl2) {
 		this. ppl1 =ppl1;
 		this. ppl2 =ppl2;
 	}
 	
+	@SuppressWarnings("static-access")
 	public Problem2(double ppl3, double ppl4) {
 		this. ppl3=ppl3;
 		this. ppl4 =ppl4;

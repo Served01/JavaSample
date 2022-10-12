@@ -1,0 +1,72 @@
+package problem20220629;
+
+import java.util.Scanner;
+
+public class Problem2 {
+	
+	
+	static Scanner sc = new Scanner(System.in);
+	//이런 static 변수들을 실전에서는 수백만개 쓰기 때문에 복사 붙여넣기를 주로 하게 되고 그로 인해 실수가 나는 것이다.
+	
+	static int ppl1;
+	static int ppl2;
+	static double ppl3;
+	static double ppl4;
+	static int plus;
+	static double minus;
+	
+	public Problem2(int ppl1,int ppl2) {
+		Problem2. ppl1 =ppl1;
+		this. ppl2 =ppl2;
+	}
+	
+	public Problem2(double ppl3, double ppl4) {
+		this. ppl3=ppl3;
+		this. ppl4 =ppl4;
+	}
+	
+    public void ppl(int ppl1,int ppl2) {
+    	
+    	
+    	plus= ppl1 + ppl2 ;
+		
+	}
+    
+    public void ppl(double ppl3, double ppl4) {
+    	
+    	
+    	minus = ppl3 - ppl4;
+   
+    	
+    }
+ 
+ 
+	public static void main(String[] args) {
+		
+		
+		System.out.println("첫번째값을 입력하시오.");
+		ppl1 = sc.nextInt();
+		System.out.println("두번째값을 입력하시오.");
+    	ppl2 = sc.nextInt();
+    	Problem2 p2 = new Problem2(ppl1,ppl2);
+		p2.ppl(ppl1,ppl2);
+		System.out.println(plus);
+		
+		System.out.println("첫번째값을 입력하시오.");
+		ppl3 = sc.nextInt();
+		System.out.println("두번째값을 입력하시오.");
+    	ppl4 = sc.nextInt();
+    	Problem2 p3 = new Problem2(ppl3,ppl4);
+	    p3.ppl(ppl3,ppl4);
+		System.out.println(minus);
+		
+		
+		//int 뭐로 설정해 놓은 값에 대해서는 = 오른쪽에 있는것을 반환받아야 식이 성립함
+		
+		
+		
+	}
+
+	
+
+}

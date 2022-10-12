@@ -17,11 +17,13 @@ public class problem1 implements radius {
 	@Override
 	public void input() {
 		
-		Scanner sc = new Scanner(System.in);
-		System.out.println("반지름 값을 입력하시오.");
-		double re= sc.nextDouble();
-		double large = (re*re)*(3.14);
-		System.out.println(large);
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("반지름 값을 입력하시오.");
+			double re= sc.nextDouble();
+			double large = (re*re)*(3.14);
+			System.out.println(large);
+		}
+
 	}
 	
 	
@@ -36,8 +38,6 @@ public class problem1 implements radius {
 		p1.input();
 		
 	}
-
-	
 
 	
 
